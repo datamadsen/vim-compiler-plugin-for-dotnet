@@ -15,7 +15,10 @@ endif
 
 CompilerSet makeprg=dotnet\ test
 CompilerSet errorformat=
-    \%f(%l\\\,%c):\ %m,
+	\%.%#=%f(%l\\\,%c):\ %tarning\ %m\ [%.%#],
+	\%.%#=%f(%l\\\,%c):\ %trror\ %m\ [%.%#],
+	\%f(%l\\\,%c):\ %tarning\ %m\ [%.%#],
+	\%f(%l\\\,%c):\ %trror\ %m\ [%.%#],
     \%EFailed\ %m,
     \%-G%.%#,
     \%Z%.%#\ at\ %.%#\ in\ %f:line\ %l,

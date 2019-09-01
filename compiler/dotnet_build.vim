@@ -19,5 +19,6 @@ CompilerSet errorformat=
     \%-ZBuild\ FAILED.,
     \%C%.%#,
     \%-G%.%#,
-	\%f(%l\\\,%c):\ %m,
+	\%f(%l\\\,%c):\ %tarning\ %m\ [%.%#],
+	\%f(%l\\\,%c):\ %trror\ %m\ [%.%#],
     \%-G%.%#

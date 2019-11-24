@@ -19,8 +19,8 @@ CompilerSet errorformat=
 	\%.%#=%f(%l\\\,%c):\ %trror\ %m\ [%.%#],
 	\%f(%l\\\,%c):\ %tarning\ %m\ [%.%#],
 	\%f(%l\\\,%c):\ %trror\ %m\ [%.%#],
-    \%EFailed\ %m,
+    \%EError\ Message:\ %m,
     \%-G%.%#,
-    \%Z%.%#\ at\ %.%#\ in\ %f:line\ %l,
+    \%.%#\ at\ %.%#\ in\ %f:line\ %l,
     \%C%.%#,
     \%-G%.%#

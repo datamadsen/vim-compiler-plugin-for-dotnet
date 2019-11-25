@@ -13,7 +13,7 @@ if exists(":CompilerSet") != 2		" older Vim always used :setlocal
   command -nargs=* CompilerSet setlocal <args>
 endif
 
-CompilerSet makeprg=dotnet\ build
+CompilerSet makeprg=dotnet\ build\ /p:GenerateFullPaths=true
 CompilerSet errorformat=
     \%-A%.%#Microsoft%.%#,
     \%-ZBuild\ FAILED.,

@@ -8,6 +8,16 @@ whenever `:make` is run it will spawn a `dotnet build` command. The plugin is
 nice to use with [vim-dispatch's][vim-dispatch] `:Make` command which will
 compile (`dotnet build`) and show any errors in the quickfix window.
 
+## Compiler Settings
+
+There are two options to change what messages are populated into the quickfix windows.
+
+```vim
+let g:dotnet_compiler_errors_only = 1
+let g:dotnet_compiler_warnings_only = 1
+```
+These correspond to `--consoleLoggerParameters:ErrorOnly` and `--consoleLoggerParameters:WarningsOnly`.
+
 ## Test
 `vim-compiler-plugin-for-dotnet` automatically sets `b:dispatch = 'dotnet
 test'` for `.cs` files. This makes [vim-dispatch's][vim-dispatch] `:Dispatch`
@@ -23,7 +33,7 @@ nunit, or mstest).
 To see explanations of what went wrong in a specific test, the
 [vim-test][vim-test] plugin is nice. Put this in your vimrc: 
 
-```
+```vim
 let g:test#csharp#runner='dotnettest'
 let test#strategy = "vimterminal"
 ```
@@ -34,7 +44,7 @@ will be in a new split.
 ## Installation
 If you use [vim-plug][vim-plug] add this to your plugins:
 
-```
+```vim
 Plug 'tmadsen/vim-compiler-plugin-for-dotnet'
 ```
 
